@@ -19,7 +19,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import in.binplus.learnbygenius.networkconnectivity.NoInternetConnectionActivity;
+import in.binplus.learnbygenius.networkconnectivity.NoInternetConnection;
 
 public class MainActivity extends AppCompatActivity {
     AlertDialog dialog;
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             checkAppPermissions();
         }
         else {
-            Intent intent = new Intent(MainActivity.this, NoInternetConnectionActivity.class);
+            Intent intent = new Intent(MainActivity.this, NoInternetConnection.class);
             startActivity(intent);
 
         }
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             else {
-                Intent intent = new Intent(MainActivity.this, NoInternetConnectionActivity.class);
+                Intent intent = new Intent(MainActivity.this, NoInternetConnection.class);
                 startActivity(intent);
 
             }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else
             {
-                Intent intent = new Intent(MainActivity.this, NoInternetConnectionActivity.class);
+                Intent intent = new Intent(MainActivity.this, NoInternetConnection.class);
                 startActivity(intent);
 
             }
